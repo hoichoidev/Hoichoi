@@ -83,7 +83,7 @@ while tt<2:
 					r=requests.post("https://assetliteapi.banglalink.net/api/v1/user/otp-login/request",data={"mobile":number})
 						
 				else:                                        url = "https://prod-api.viewlift.com/identity/signup?site=hoichoitv"
-					headers = CaseInsensitiveDict()
+					headers=CaseInsensitiveDict()
 					headers["Host"] = "prod-api.viewlift.com"
 					headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0"
 					headers["Accept"] = "application/json, text/plain, */*"
