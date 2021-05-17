@@ -9,7 +9,7 @@ apt install git
 pip install requests
 git clone https://github.com/TaNviiR-RiiYaD/Hoichoi
 cd Hoichoi
-python main.
+python main.py
 
 
 For All Time Use the Tools 
