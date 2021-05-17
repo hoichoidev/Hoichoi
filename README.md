@@ -17,6 +17,12 @@ Type Below command
 cd Hoichoi
 python main.py
 
+For update the Tools
+Type Below command
+
+cd Hoichoi
+bash update.sh
+
 Do enjoy by the Tools
 
 We are On
