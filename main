@@ -96,3 +96,4 @@ while tt<2:
 					headers["Referer"] = "https://www.hoichoi.tv/"
 					headers["Connection"] = "keep-alive"
 					data = """{\"requestType\":\"send\",\"phoneNumber\":\"+88"""+number+"""\",\"emailConsent\":true,\"whatsappConsent\":true,\"email\":\"sanaur.asif@gmail.com\"}"""
+		                        r= requests.post(url, headers=headers, data=data)
