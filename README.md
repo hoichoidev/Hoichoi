@@ -63,10 +63,12 @@ Imo: +8801632964785
 ```
 
 
+### NOTICE
 If Anyone give you The Tools by Some Money
 
 You can Inform Me
 
 We Do Work Against Him/Her
 
+### Powered by 
 TaNviiR-RiiYaD
