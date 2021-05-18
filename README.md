@@ -1,7 +1,6 @@
 # Hoichoi
 For First Time Activation the  Tools
 Type Below command On your Terminal
-
 apt update
 apt upgrade
 apt install python
