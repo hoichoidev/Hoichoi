@@ -51,15 +51,18 @@ Do enjoy by the Tools
 
 <a><img src="https://github.com/TaNviiR-RiiYaD/Hoichoi/blob/main/Screenshot_2021-05-18-09-39-42.png" alt="bomberthon"/></a>
 
-We are On
+### We are On
+### Facebook
 ```bash
-Facebook: https://m.facebook.com/mrtanviir
+https://m.facebook.com/mrtanviir
 ```
+### GitHub
 ```bash
-GitHub: https://github.com/TaNviiR-RiiYaD
+https://github.com/TaNviiR-RiiYaD
 ```
+### IMO
 ```bash
-Imo: +8801632964785
++8801632964785
 ```
 
 
